@@ -49,7 +49,7 @@ class HousingAgency:
         return self.__house_infos
 
     def sign_contract(self, houseinfo, period):
-        print(self.get_name() , "与房东" , houseinfo.get_onwer_name(), "签订", houseinfo.get_address(),"的房子合同，租期为：", period, "年, 租期内", self.get_name(), "有权对其进行使用和转租！")
+        print(self.get_name(), "与房东", houseinfo.get_onwer_name(), "签订", houseinfo.get_address(), "的房子合同，租期为：", period, "年, 租期内", self.get_name(), "有权对其进行使用和转租！")
 
     def sign_contracts(self, period):
         for info in self.__house_infos:

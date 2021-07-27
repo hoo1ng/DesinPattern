@@ -112,7 +112,7 @@ if __name__ == '__main__':
     deviceList = deviceUtil.getDeviceList(DeviceType.TypeSpeaker)
     print("麦克风设备列表：")
     if deviceList.getCount() > 0:
-        deviceUtil.active(DeviceType.TypeSpeaker, deviceList.getByIdx(1).getId())
+        deviceUtil.active(DeviceType.TypeSpeaker, deviceList.getByIdx(0).getId())
 
     for idx in range(0, deviceList.getCount()):
         device = deviceList.getByIdx(idx)
